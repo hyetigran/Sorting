@@ -22,13 +22,16 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-
+    print(arr)
     for i in range(0, len(arr)):
         cur_index = i
-        smallest_index = cur_index
-        for j in range(0, len(arr)):
-            if arr[j]
-
+        print(f"i: {i}")
+        for j in range(i+1, len(arr)):
+            print(f"j: {j}")
+            if arr[j] < arr[cur_index]:
+                arr[cur_index], arr[j] = arr[j], arr[cur_index]
+            print(f'{arr}\n')
+        # print(f'{arr}\n\n')
     return arr
 
 
